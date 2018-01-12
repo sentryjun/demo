@@ -80,6 +80,7 @@
 
     
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/highcharts.js"></script>
     <script src="js/highcharts-more.js"></script>
     <script>
@@ -99,6 +100,9 @@
                     text:'中国的关联词云',
                 },
                 xAxis : {
+                    startOnTick:true,
+                    endOnTick:true,
+                    lineWidth:2,
                     gridWidth : 1,
                     title : {
                         text : '时间',
@@ -112,10 +116,12 @@
                     }]
                 },
                 yAxis : {
-                    startOnTick:false,
-                    endOnTick:false,
+                    startOnTick:true,
+                    endOnTick:true,
+                    gridWidth : 1,
+                    lineWidth : 2,
                     title:{
-                        title:'平均距离'
+                        text:'平均距离'
                     },
                     labels: {
                         format: '{value}'
