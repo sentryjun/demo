@@ -34,8 +34,6 @@ nav >.active>a, .navbar-nav>.active>a:focus,.navbar-right>a:hover, .navbar-inver
     text-transform: uppercase;
     font-weight: 700;
     text-align:center;
-    position: relative;
-    z-index: -1
 }
 
 .team-member h7 {
@@ -45,7 +43,6 @@ nav >.active>a, .navbar-nav>.active>a:focus,.navbar-right>a:hover, .navbar-inver
 .team-member img {
     height: 149px;
     width: 118px;
-    z-index: -1
 }
 .team-member:hover .overlay {
     opacity: 0.8;
@@ -54,7 +51,6 @@ nav >.active>a, .navbar-nav>.active>a:focus,.navbar-right>a:hover, .navbar-inver
     -ms-transform: rotateY(0deg) scale(1,1);
     -o-transform: rotateY(0deg) scale(1,1);
     transform: rotateY(0deg) scale(1,1);
-    z-index: -1;
 }
 .overlay {
     background-color: rgb(255, 255, 255);
@@ -71,21 +67,9 @@ nav >.active>a, .navbar-nav>.active>a:focus,.navbar-right>a:hover, .navbar-inver
     -moz-transition: all 850ms ease-in-out;
     -o-transition: all 850ms ease-in-out;
     transition: all 850ms ease-in-out;
-
 }
 
 /*.panel-body {
     margin: auto;
     height:80%
 }*/
-
-.cmodal 
-{
-    position: fixed;
-    width: 90%;
-    height: 90%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.7);
-
-}
