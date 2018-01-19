@@ -1162,7 +1162,15 @@ if (typeof jQuery === 'undefined') {
     this.$element.css({
       paddingLeft:  !this.bodyIsOverflowing && modalIsOverflowing ? this.scrollbarWidth : '',
       paddingRight: this.bodyIsOverflowing && !modalIsOverflowing ? this.scrollbarWidth : ''
-    })
+    });
+    //模态框居中  
+    var element = this.$element;  
+    var dialog = this.$dialog;  
+    dialog.css({  
+        'top': function () {  
+            return (element.height() - dialog.outerHeight(true)) / 2;  
+        }  
+    });  
   }
 
   Modal.prototype.resetAdjustments = function () {

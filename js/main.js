@@ -7,12 +7,13 @@ $(function makegragh(){
                     },
                     type : "bubble",
                     zoomType:'yx',
+                    renderTo:'container'
                 },
                 credits : {
                     enabled:false,
                 },
                 title:{
-                    text:'中国的关联词云',
+                    text:'\"中国\"的关联词云',
                 },
                 xAxis : {
                     startOnTick:true,
@@ -63,7 +64,7 @@ $(function makegragh(){
                     enabled: true,
                     format: '{point.name}',
                     style: {
-                    fontWeight: 'bold',
+                    fontWeight: 'normal',
                     fontSize: '16px',
                     textOutline: "0px 0px contrast"
                 }
@@ -85,9 +86,15 @@ $(function makegragh(){
                     {x:2008, y: 152, z: 1000, name:'bcd'},
                 ]
             }],
-        })
-})
-var array =null
+        });
+        /*$('#bigger').on('mousedown', function () {
+            $("#container").toggleClass('cmodal');
+            //$('#c-container').toggleClass('cmodal');
+            //chart.redraw()
+            chart.reflow();
+        });*/
+});
+
 
 //$("#search").submit(function(){
 $("#btn").click(function(){
@@ -179,7 +186,7 @@ $("#btn").click(function(){
                 },
                 series : [
                     {
-                    name: index+'的关联词云',
+                    name: '\"'+index+'\"'+'的关联词云',
                     data:datas.data,
                 }],
             })
@@ -187,5 +194,20 @@ $("#btn").click(function(){
         })
         //return false;
     }
-})
+});
 
+/*$("#modalbtn").click(function(){
+    $('#MyModal').modal('show');
+    var temp=chart.options;
+    Highcharts.chart('container2', temp);
+});*/
+$('#myModal').on('show.bs.modal', function () {
+    var temp=chart.options;
+    temp.height=1000;
+    Highcharts.chart('container2', temp);
+    //$('#container2').highcharts().reflow();
+  });
+
+$('#close').click(function(){
+    $('#container2').highcharts().destroy();
+})

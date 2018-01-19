@@ -73,18 +73,34 @@
             </div>
         
             <div class="container">
-                <div id="image" class="page-header">
+                <div  class="page-header">
                     <h2>关联词云图</h2>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
+                
+                    <!--<div class="panel-heading">
                         <h3 class="panel-title">关联词云图</h3>
-                    </div>
-                    <div id = "container" class="panel-body"></div>
-                </div>
+                    </div>-->
+                    <div id = "container"></div>
+            </div>
+            <button id="modalbtn"class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">全屏</button>
+            <!-- 模态框（Modal） -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" style="width:90%;height:2000">
+                    <div class="modal-content"style="width:90%;height:90%">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">关联词云</h4>
+                        </div>
+                        <div class="modal-body"id="container2"style="width:90%;height:1000"></div>
+                        <div class="modal-footer">
+                            <button id="close"type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal -->
             </div>
 
-            <div class="container">
+
+            <div class="container" id="Team">
                 <div id="team" class="page-header">
                    <h2>小组成员</h2>
                 </div>
@@ -92,7 +108,7 @@
                     <div class="col-md-3">
                         <div class="team-member">
                             
-                                <div></div>
+                                
                                 <center>
                                     <img src="img/xx.jpg">
                                 </center>
@@ -112,7 +128,7 @@
                     <div class="col-md-3">
                         <div class="team-member">
                             
-                                <div></div>
+                                
                                 <center>
                                     <img src="img/xx.jpg">
                                 </center>
@@ -132,7 +148,7 @@
                     <div class="col-md-3">
                         <div class="team-member">
                             
-                                <div></div>
+                                
                                 <center>
                                     <img src="img/xx.jpg">
                                 </center>
@@ -152,7 +168,7 @@
                     <div class="col-md-3">
                         <div class="team-member">
                             
-                                <div></div>
+                                
                                 <center>
                                     <img src="img/xx.jpg">
                                 </center>
@@ -174,7 +190,7 @@
                     <div class="col-md-3">
                         <div class="team-member">
                             
-                                <div></div>
+                                
                                 <center>
                                     <img src="img/xx.jpg">
                                 </center>
@@ -194,7 +210,7 @@
                     <div class="col-md-3">
                         <div class="team-member">
                             
-                                <div></div>
+                                
                                 <center>
                                     <img src="img/xx.jpg">
                                 </center>
@@ -214,7 +230,7 @@
                     <div class="col-md-3">
                         <div class="team-member">
                             
-                                <div></div>
+                                
                                 <center>
                                     <img src="img/xx.jpg">
                                 </center>
@@ -235,7 +251,7 @@
                     <div class="col-md-3">
                         <div class="team-member">
                             
-                                <div></div>
+                                
                                 <center>
                                     <img src="img/xx.jpg">
                                 </center>
@@ -257,7 +273,7 @@
                     <div class="col-md-3">
                         <div class="team-member">
                             
-                                <div></div>
+                                
                                 <center>
                                     <img src="img/xx.jpg">
                                 </center>
@@ -288,10 +304,11 @@
 
     
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/highcharts.js"></script>
     <script src="js/highcharts-more.js"></script>
     <script src="js/mock.js"></script>
+    <!--<script src="js/lobipanel.js"></script>-->
     <script src="js/main.js"></script>
     <script>Mock.mock('http://test.com',{
         "data|10-20":[{
