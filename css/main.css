@@ -1,57 +1,85 @@
-﻿button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
-body { font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;padding-top: 70px; }
-#btn {background-color: #337ab7; border-color: #2e6da4; color: white}
+﻿button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+    font-family: Microsoft YaHei, '宋体', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+body {
+    font-family: Microsoft YaHei, '宋体', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    padding-top: 70px;
+}
+
+#search-button {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    color: white
+}
+
 /*navbar*/
 
-#navhead
-{
+#navhead {
     background-color: #94070A
 }
-#nav li{
+
+#nav li {
     border-right: 5px solid #ccc;
 }
-#navbar  li a{
+
+#navbar li a {
     color: #fff
 }
+
 .navbar .navbar-brand {
     color: #fff
 }
-.navbar-nav>li>a:hover{
+
+.navbar-nav > li > a:hover {
     background-color: rgb(124, 6, 8);
     color: #fff
 }
-nav >.active>a, .navbar-nav>.active>a:focus,.navbar-right>a:hover, .navbar-inverse .navbar-nav>.active>a:hover
-{
+
+nav > .active > a, .navbar-nav > .active > a:focus, .navbar-right > a:hover, .navbar-inverse .navbar-nav > .active > a:hover {
     color: #fff;
     background-color: #94070A
 }
+
+/*navbar form*/
+
+.search-tips {
+    width: 179px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+
+}
+
 /*team-member*/
 .team-member h6 {
-    font-size:15px;
+    font-size: 15px;
     /*font-family:"Cantarell", "Times New Roman", sans-serif;*/
-    line-height:10px;
-    color:#333;
+    line-height: 10px;
+    color: #333;
     text-transform: uppercase;
     font-weight: 700;
-    text-align:center;
+    text-align: center;
 }
 
 .team-member h7 {
-    text-align:center;
+    text-align: center;
 }
 
 .team-member img {
     height: 149px;
     width: 118px;
 }
+
 .team-member:hover .overlay {
     opacity: 0.8;
-    -webkit-transform: rotateY(0deg) scale(1,1);
-    -moz-transform: rotateY(0deg) scale(1,1);
-    -ms-transform: rotateY(0deg) scale(1,1);
-    -o-transform: rotateY(0deg) scale(1,1);
-    transform: rotateY(0deg) scale(1,1);
+    -webkit-transform: rotateY(0deg) scale(1, 1);
+    -moz-transform: rotateY(0deg) scale(1, 1);
+    -ms-transform: rotateY(0deg) scale(1, 1);
+    -o-transform: rotateY(0deg) scale(1, 1);
+    transform: rotateY(0deg) scale(1, 1);
 }
+
 .overlay {
     background-color: rgb(255, 255, 255);
     text-align: center;
@@ -73,3 +101,7 @@ nav >.active>a, .navbar-nav>.active>a:focus,.navbar-right>a:hover, .navbar-inver
     margin: auto;
     height:80%
 }*/
+
+#search li a {
+    color: #333;
+}
