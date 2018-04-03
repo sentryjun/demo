@@ -119,10 +119,17 @@ $("#search").submit(function () {
             dataType: "json",
             data: {"input": input},
             success: function (datas) {
+                if (datas.data.lenth == 0 )
+                {
+                    alert("没有该词语的关联词云")
+                }
+                else
+                {
                 chart.series[0].data = datas.data;
                 chart.series[0].name = '\"' + input + '\"的关联词云';
                 chart.title.text = '\"' + input + '\"的关联词云';
                 Highcharts.chart("container", chart);
+                }
             }
         })
     }
