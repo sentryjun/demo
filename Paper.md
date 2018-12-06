@@ -1,4 +1,5 @@
 # 网络级联模型的一些补充
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 高俊 信息科学与技术学院 1600011837 <gaojun.pku@pku.edu.cn>
 
@@ -33,4 +34,3 @@
 
 影响力传播模型还有很多其他的形式，但是大多都是以独立级联模型和线性阈值模型为基础的改进，感兴趣的同学可以更深入地研究。
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
